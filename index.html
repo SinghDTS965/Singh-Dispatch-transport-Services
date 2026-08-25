@@ -3,177 +3,1144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singh Dispatch Transport Services | Trucking & Freight Dispatch</title>
+
+    <title>Singh Dispatch Transport Services | Professional Freight Dispatch</title>
+
+    <meta name="description" content="Singh Dispatch Transport Services provides professional freight dispatching, load sourcing, rate negotiation, paperwork, and administrative support for trucking companies and owner-operators.">
+
     <style>
         :root {
-            --primary: #0a192f;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
+            --navy: #0a192f;
+            --navy-light: #112a46;
+            --blue: #2563eb;
+            --blue-dark: #1d4ed8;
+            --light-blue: #eff6ff;
             --light: #f8fafc;
+            --white: #ffffff;
             --text: #334155;
-            --card-bg: #ffffff;
+            --muted: #64748b;
+            --border: #e2e8f0;
+            --success: #16a34a;
         }
-        
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-        body { color: var(--text); background-color: var(--light); line-height: 1.6; }
 
-        /* Navigation Bar */
-        header { 
-            background: var(--primary); 
-            color: white; 
-            padding: 1.2rem 8%; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; 
-            top: 0; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: var(--text);
+            background: var(--light);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: rgba(10, 25, 47, 0.98);
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
         }
-        .logo { font-size: 1.3rem; font-weight: 700; letter-spacing: 0.5px; }
-        .logo span { color: var(--accent); }
-        nav a { color: #cbd5e1; text-decoration: none; margin-left: 24px; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
-        nav a:hover { color: white; }
 
-        /* Hero Banner */
-        .hero { 
-            background: linear-gradient(rgba(10, 25, 47, 0.88), rgba(10, 25, 47, 0.88)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80') center/cover; 
-            color: white; 
-            padding: 120px 8% 100px; 
-            text-align: center; 
+        .logo {
+            color: white;
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 0.3px;
         }
-        .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
-        .hero p { font-size: 1.25rem; max-width: 720px; margin: 0 auto 35px; color: #94a3b8; }
-        .btn { 
-            display: inline-block; 
-            background: var(--accent); 
-            color: white; 
-            padding: 14px 32px; 
-            border-radius: 6px; 
-            text-decoration: none; 
-            font-weight: 600; 
-            transition: background 0.2s, transform 0.2s; 
+
+        .logo span {
+            color: #60a5fa;
         }
-        .btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
 
-        /* Page Layout Sections */
-        section { padding: 90px 8%; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: 2.25rem; font-weight: 700; margin-bottom: 50px; color: var(--primary); }
-
-        /* Grid Layout */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { 
-            background: var(--card-bg); 
-            padding: 35px 30px; 
-            border-radius: 10px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.04); 
-            border-top: 4px solid var(--accent); 
-            transition: transform 0.3s, box-shadow 0.3s;
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 26px;
         }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-        .card h3 { margin-bottom: 15px; color: var(--primary); font-size: 1.3rem; }
 
-        /* Equipment / Vehicle Support Tags */
-        .equipment-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px; }
-        .tag { background: #e2e8f0; color: var(--primary); padding: 10px 20px; border-radius: 30px; font-weight: 600; font-size: 0.95rem; }
+        nav a {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
 
-        /* Image Display */
-        .truck-image {
-            width: 100%;
-            max-width: 850px;
-            height: auto;
+        nav a:hover {
+            color: white;
+        }
+
+        .nav-quote {
+            background: var(--blue);
+            color: white !important;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .nav-quote:hover {
+            background: var(--blue-dark);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(10, 25, 47, 0.88),
+                    rgba(10, 25, 47, 0.90)
+                ),
+                url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=85")
+                center / cover no-repeat;
+
+            padding: 100px 7%;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.18);
+            border: 1px solid rgba(96, 165, 250, 0.5);
+            color: #bfdbfe;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: #60a5fa;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: 0 auto 35px;
+            color: #cbd5e1;
+            font-size: 1.2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--blue);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--blue-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid #94a3b8;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--navy);
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 7%;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 55px;
+        }
+
+        .section-heading .small-title {
+            color: var(--blue);
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+            font-size: clamp(2rem, 4vw, 2.7rem);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        #services {
+            background: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px 30px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+            border-color: #bfdbfe;
+        }
+
+        .service-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-blue);
+            color: var(--blue);
             border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            color: var(--navy);
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--muted);
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        #about {
+            background: var(--light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
             display: block;
-            margin: 0 auto 35px auto;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
         }
 
-        /* Contact Block */
-        .contact-box { 
-            background: var(--card-bg); 
-            text-align: center; 
-            border-radius: 10px; 
-            padding: 50px 30px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        .about-content .small-title {
+            color: var(--blue);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.9rem;
         }
-        .contact-box p { font-size: 1.15rem; margin-bottom: 15px; }
-        .contact-info { margin: 25px 0; font-size: 1.2rem; font-weight: 600; color: var(--primary); }
 
-        /* Footer */
-        footer { background: var(--primary); color: #64748b; text-align: center; padding: 35px; font-size: 0.9rem; }
+        .about-content h2 {
+            color: var(--navy);
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin: 10px 0 20px;
+        }
+
+        .about-content p {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .check-list li {
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .check-list li::before {
+            content: "✓";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #dcfce7;
+            color: var(--success);
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: 900;
+        }
+
+        /* =========================
+           WHY CHOOSE US
+        ========================= */
+
+        #why-us {
+            background: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--light);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .why-number {
+            color: var(--blue);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .why-card h3 {
+            color: var(--navy);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .why-card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           EQUIPMENT
+        ========================= */
+
+        #equipment {
+            background: #f1f5f9;
+        }
+
+        .equipment-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .equipment-tag {
+            background: white;
+            color: var(--navy);
+            border: 1px solid var(--border);
+            padding: 13px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+            transition: 0.2s ease;
+        }
+
+        .equipment-tag:hover {
+            background: var(--blue);
+            color: white;
+            border-color: var(--blue);
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background: var(--navy);
+            color: white;
+            text-align: center;
+            padding: 80px 7%;
+        }
+
+        .cta h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        #contact {
+            background: var(--light);
+        }
+
+        .contact-box {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 14px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(15, 23, 42, 0.07);
+            border: 1px solid var(--border);
+        }
+
+        .contact-box h2 {
+            color: var(--navy);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-box > p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .contact-item {
+            background: var(--light);
+            padding: 18px 25px;
+            border-radius: 8px;
+            min-width: 250px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .contact-item a {
+            color: var(--blue);
+            font-weight: 600;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #071426;
+            color: #94a3b8;
+            text-align: center;
+            padding: 35px 7%;
+        }
+
+        footer .footer-logo {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        footer .footer-logo span {
+            color: #60a5fa;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            header {
+                padding: 16px 5%;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            .nav-quote {
+                padding: 8px 12px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 0.82rem;
+            }
+
+            .hero {
+                min-height: 600px;
+                padding: 80px 5%;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 65px 5%;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 35px 20px;
+            }
+
+            .contact-details {
+                flex-direction: column;
+            }
+
+            .contact-item {
+                min-width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
 
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header>
-        <div class="logo">Singh Dispatch <span>Transport</span></div>
+
+        <a href="#home" class="logo">
+            Singh Dispatch <span>Transport</span>
+        </a>
+
         <nav>
-            <a href="#services">Services</a>
-            <a href="#equipment">Equipment</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#equipment">Equipment</a>
             <a href="#contact">Contact</a>
+            <a href="#contact" class="nav-quote">Get a Quote</a>
         </nav>
+
     </header>
 
-    <div class="hero">
-        <h1>Keep Your Trucks Moving & Profitable</h1>
-        <p>Professional dispatch support for carriers who want dependable communication, organized dispatch assistance, and more time to focus on their trucking operations.</p>
-        <a href="#contact" class="btn">Start Hauling With Us</a>
-    </div>
+
+    <!-- =========================
+         HERO / HOME
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Professional Freight Dispatch Services
+            </div>
+
+            <h1>
+                Keep Your Trucks Moving
+                <span>& Profitable</span>
+            </h1>
+
+            <p>
+                Reliable dispatch support for owner-operators and carriers.
+                We help you find loads, negotiate rates, manage paperwork,
+                and keep your operation moving forward.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn btn-primary">
+                    Get a Free Quote
+                </a>
+
+                <a href="#services" class="btn btn-outline">
+                    Explore Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
 
     <section id="services">
-        <h2 class="section-title">Our Dispatch Services</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Load Sourcing & Negotiation</h3>
-                <p>We monitor market trends to negotiate top-tier rates on your behalf, maximizing your gross revenue per mile.</p>
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    What We Do
+                </div>
+
+                <h2>
+                    Professional Dispatch Support
+                </h2>
+
+                <p>
+                    Spend more time driving and less time dealing with
+                    load boards, paperwork, and broker communication.
+                </p>
+
             </div>
-            <div class="card">
-                <h3>Paperwork & Compliance</h3>
-                <p>Eliminate back-office stress. We handle broker setup packets, rate confirmations, NOAs, and compliance checks.</p>
+
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        $
+                    </div>
+
+                    <h3>
+                        Load Sourcing & Negotiation
+                    </h3>
+
+                    <p>
+                        We search for available loads and help negotiate
+                        competitive rates based on your equipment,
+                        preferred lanes, and business goals.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Broker Setup & Paperwork
+                    </h3>
+
+                    <p>
+                        We help manage broker setup packets, rate
+                        confirmations, paperwork, and other administrative
+                        tasks so you can stay focused on the road.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        ↗
+                    </div>
+
+                    <h3>
+                        Dispatch & Administrative Support
+                    </h3>
+
+                    <p>
+                        From load coordination to document organization,
+                        we provide dependable back-office support designed
+                        around your operation.
+                    </p>
+
+                </div>
+
             </div>
-            <div class="card">
-                <h3>Billing & Administrative Support</h3>
-                <p>Streamlined invoicing and factor-ready document management to ensure prompt payouts with zero delays.</p>
-            </div>
+
         </div>
+
     </section>
 
-    <section id="equipment" style="text-align: center; background: #f1f5f9; max-width: 100%; border-radius: 0;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title">Equipment We Dispatch</h2>
-            <div class="equipment-list">
-                <span class="tag">Box Trucks</span>
-                <span class="tag">Hotshots</span>
-                <span class="tag">Dry Vans</span>
-                <span class="tag">Reefers</span>
-                <span class="tag">Power Only</span>
-            </div>
-        </div>
-    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section id="about">
-        <h2 class="section-title">Why Partner With Us</h2>
-        <img src="truck.png" alt="Dispatch Support Truck" class="truck-image">
-        <div class="card" style="max-width: 850px; margin: 0 auto; text-align: center; border-top-color: var(--primary);">
-            <p>Operating a successful fleet requires constant attention to the road. We serve as your dedicated back-office partner—eliminating the daily hassles of load board searching, broker negotiation, and endless paperwork. Count on clear communication, strategic route planning, and dedicated support built around your preferences.</p>
+
+        <div class="section-container">
+
+            <div class="about-grid">
+
+                <div>
+
+                    <!-- IMPORTANT:
+                         This filename matches your GitHub file exactly.
+                         Your file is named Truck.png
+                    -->
+
+                    <img
+                        src="Truck.png"
+                        alt="Singh Dispatch Transport Services Truck"
+                        class="about-image"
+                    >
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="small-title">
+                        About Singh Dispatch
+                    </div>
+
+                    <h2>
+                        Your Partner Behind the Wheel
+                    </h2>
+
+                    <p>
+                        Running a trucking business requires more than
+                        getting behind the wheel. Finding good loads,
+                        communicating with brokers, negotiating rates,
+                        and handling paperwork can take valuable time
+                        away from your operation.
+                    </p>
+
+                    <p>
+                        Singh Dispatch Transport Services provides
+                        dependable dispatch and administrative support
+                        to help carriers stay organized and focused
+                        on what they do best — moving freight.
+                    </p>
+
+
+                    <ul class="check-list">
+
+                        <li>
+                            Dedicated dispatch support
+                        </li>
+
+                        <li>
+                            Load searching and coordination
+                        </li>
+
+                        <li>
+                            Broker communication
+                        </li>
+
+                        <li>
+                            Rate negotiation assistance
+                        </li>
+
+                        <li>
+                            Paperwork and administrative support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
+
+
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+
+    <section id="why-us">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Why Choose Us
+                </div>
+
+                <h2>
+                    Built Around Your Business
+                </h2>
+
+                <p>
+                    Our goal is simple: help you spend less time
+                    on administrative work and more time hauling.
+                </p>
+
+            </div>
+
+
+            <div class="why-grid">
+
+                <div class="why-card">
+
+                    <div class="why-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Reliable Support
+                    </h3>
+
+                    <p>
+                        Dependable communication and dispatch assistance
+                        when you need it.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Better Organization
+                    </h3>
+
+                    <p>
+                        Keep your load information and paperwork
+                        organized and accessible.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Carrier Focused
+                    </h3>
+
+                    <p>
+                        Dispatch support built around your equipment,
+                        lanes, and preferences.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Save Time
+                    </h3>
+
+                    <p>
+                        Let us handle time-consuming dispatch tasks
+                        while you focus on driving.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EQUIPMENT
+    ========================== -->
+
+    <section id="equipment">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div class="small-title">
+                    Equipment
+                </div>
+
+                <h2>
+                    Equipment We Dispatch
+                </h2>
+
+                <p>
+                    Dispatch support for a variety of trucking
+                    equipment and freight operations.
+                </p>
+
+            </div>
+
+
+            <div class="equipment-list">
+
+                <span class="equipment-tag">
+                    Box Trucks
+                </span>
+
+                <span class="equipment-tag">
+                    Hotshots
+                </span>
+
+                <span class="equipment-tag">
+                    Dry Vans
+                </span>
+
+                <span class="equipment-tag">
+                    Reefers
+                </span>
+
+                <span class="equipment-tag">
+                    Power Only
+                </span>
+
+                <span class="equipment-tag">
+                    Flatbeds
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>
+            Ready to Keep Your Truck Moving?
+        </h2>
+
+        <p>
+            Let Singh Dispatch Transport Services help you
+            simplify your dispatch process and spend more time
+            focused on your trucking operation.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Get a Quote Today
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
     <section id="contact">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="contact-box">
-            <p>Ready to streamline your load setup and scale your driving operation?</p>
-            <div class="contact-info">
-                <p>Email: contact@singhdispatch.com</p>
-                <p>Phone: (000) 000-0000</p>
+
+        <div class="section-container">
+
+            <div class="contact-box">
+
+                <h2>
+                    Let's Work Together
+                </h2>
+
+                <p>
+                    Interested in professional dispatch support?
+                    Contact Singh Dispatch Transport Services today.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <a href="mailto:contact@singhdispatch.com">
+                            contact@singhdispatch.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <strong>
+                            Phone
+                        </strong>
+
+                        <!-- CHANGE THIS NUMBER TO YOUR REAL BUSINESS NUMBER -->
+
+                        <a href="tel:+10000000000">
+                            (000) 000-0000
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="mailto:contact@singhdispatch.com?subject=Dispatch%20Services%20Quote"
+                    class="btn btn-primary"
+                >
+                    Request a Quote
+                </a>
+
             </div>
-            <a href="mailto:contact@singhdispatch.com" class="btn">Email Us Directly</a>
+
         </div>
+
     </section>
 
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        <p>&copy; 2026 Singh Dispatch Transport Services. All rights reserved.</p>
+
+        <div class="footer-logo">
+            Singh Dispatch <span>Transport Services</span>
+        </div>
+
+        <p>
+            Professional Freight Dispatch & Administrative Support
+        </p>
+
+        <p style="margin-top: 10px;">
+            &copy; 2026 Singh Dispatch Transport Services.
+            All rights reserved.
+        </p>
+
     </footer>
 
 </body>
